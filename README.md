@@ -388,7 +388,7 @@ function LinksDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' className='flex gap-4 max-w-[100px]'>
+        <Button variant='outline' className='flex gap-4 max-w-25'>
           <LuAlignLeft className='w-6 h-6' />
         </Button>
       </DropdownMenuTrigger>
@@ -1009,7 +1009,7 @@ function HeroCarousel() {
                     <Image
                       src={image}
                       alt='hero'
-                      className='w-full h-[24rem] rounded-md object-cover'
+                      className='w-full h-96 rounded-md object-cover'
                     />
                   </CardContent>
                 </Card>
@@ -1702,7 +1702,7 @@ function LinksDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='outline' className='flex gap-4 max-w-[100px]'>
+        <Button variant='outline' className='flex gap-4 max-w-25'>
           <LuAlignLeft className='w-6 h-6' />
           <UserIcon />
         </Button>
@@ -3014,7 +3014,7 @@ function ImageInputContainer(props: ImageInputContainerProps) {
         src={image}
         width={200}
         height={200}
-        className='rounded-md object-cover mb-4 w-[200px] h-[200px]'
+        className='rounded-md object-cover mb-4 w-50 h-50'
         alt={name}
       />
 
@@ -3992,8 +3992,8 @@ const ReviewLoadingCard = () => {
         <div className='flex items-center'>
           <Skeleton className='w-12 h-12 rounded-full' />
           <div className='ml-4'>
-            <Skeleton className='w-[150px] h-4 mb-2' />
-            <Skeleton className='w-[100px] h-4' />
+            <Skeleton className='w-37.5 h-4 mb-2' />
+            <Skeleton className='w-25 h-4' />
           </div>
         </div>
       </CardHeader>
@@ -4184,7 +4184,7 @@ function SelectProductAmount(
         onValueChange={(value) => setAmount(Number(value))}
         disabled={cartItem ? props.isLoading : false}
       >
-        <SelectTrigger className={cartItem ? 'w-[100px]' : 'w-[150px]'}>
+        <SelectTrigger className={cartItem ? 'w-25' : 'w-37.5'}>
           <SelectValue placeholder={amount} />
         </SelectTrigger>
         <SelectContent>
