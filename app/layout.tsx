@@ -8,7 +8,7 @@ import Providers from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next Storefront",
+  title: "Next JS Storefront",
   description: "A nifty store built with Next.js",
 };
 
